@@ -3,12 +3,12 @@ import { Sidebar } from "./components/Sidebar";
 import { Dashboard } from "./views/Dashboard";
 import { AiTutor } from "./views/AiTutor";
 import { CourseGallery } from "./views/CourseGallery";
+import { Reports } from "./views/Reports";
+import { Achievements } from "./views/Achievements";
 import { motion, AnimatePresence } from "motion/react";
 import { 
   Bell, 
-  Search, 
-  Command,
-  HelpCircle
+  Search
 } from "lucide-react";
 
 export default function App() {
@@ -19,24 +19,8 @@ export default function App() {
       case "dashboard": return <Dashboard />;
       case "aitutor": return <AiTutor />;
       case "courses": return <CourseGallery />;
-      case "reports": return (
-        <div className="flex flex-col items-center justify-center h-[60vh] text-center">
-          <div className="w-20 h-20 rounded-full bg-neon-purple/20 flex items-center justify-center mb-6 border border-neon-purple/30">
-            <Command className="w-10 h-10 text-neon-purple" />
-          </div>
-          <h2 className="text-3xl font-display font-bold mb-2 text-white">智能分析加载中</h2>
-          <p className="text-slate-500 max-w-sm">正在同步您的认知增长图谱。该模块将在您下次会话后可用。</p>
-        </div>
-      );
-      case "achievements": return (
-        <div className="flex flex-col items-center justify-center h-[60vh] text-center">
-          <div className="w-20 h-20 rounded-full bg-neon-cyan/20 flex items-center justify-center mb-6 border border-neon-cyan/30">
-            <HelpCircle className="w-10 h-10 text-neon-cyan" />
-          </div>
-          <h2 className="text-3xl font-display font-bold mb-2 text-white">探索者护照</h2>
-          <p className="text-slate-500 max-w-sm">您的数字成就正在生成中，将永久记录在您的学习链路里。</p>
-        </div>
-      );
+      case "reports": return <Reports />;
+      case "achievements": return <Achievements />;
       default: return <Dashboard />;
     }
   };

@@ -18,11 +18,11 @@ interface SidebarProps {
 }
 
 const navItems = [
-  { id: "dashboard", icon: LayoutDashboard, label: "控制面板" },
-  { id: "aitutor", icon: MessageSquare, label: "AI 导师" },
-  { id: "courses", icon: BookOpen, label: "词汇实验室" },
-  { id: "reports", icon: BarChart3, label: "智能报告" },
-  { id: "achievements", icon: Trophy, label: "学生护照" },
+  { id: "dashboard", icon: LayoutDashboard, label: "学习中心" },
+  { id: "aitutor", icon: MessageSquare, label: "AI 口语陪练" },
+  { id: "courses", icon: BookOpen, label: "词汇学习" },
+  { id: "reports", icon: BarChart3, label: "学习报告" },
+  { id: "achievements", icon: Trophy, label: "学习档案" },
 ];
 
 export function Sidebar({ activeView, onViewChange }: SidebarProps) {
