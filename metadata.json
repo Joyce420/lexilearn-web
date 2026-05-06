@@ -1,0 +1,5 @@
+{
+  "name": "LexiLearn V2",
+  "description": "An AI-powered language learning platform with space-age futurism design, featuring real-time tutoring, word labs, and immersive learning reports.",
+  "requestFramePermissions": ["camera", "microphone"]
+}
